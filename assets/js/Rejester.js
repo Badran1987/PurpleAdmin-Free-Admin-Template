@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const Country = document.getElementById("Country");
     const register = document.getElementById("register");
     const db = firebase.firestore();
-    register.addEventListener("click", function () {
+    register.addEventListener("submit", function (e) {
+     
+      e.preventDefault();
       alert(email.value);
       alert(password.value);
       
